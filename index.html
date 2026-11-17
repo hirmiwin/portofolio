@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hermawan — Digital Entusiast</title>
+  <meta name="description" content="Portofolio Hermawan, digital entusiast yang suka membuat website cepat, ramah pengguna, dan menyenangkan.">
+  <meta name="theme-color" content="#FFF9F2">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='26'%20fill='%23FF6B6B'/%3E%3Ctext%20x='50'%20y='71'%20font-family='Arial'%20font-size='58'%20font-weight='bold'%20text-anchor='middle'%20fill='%23241F35'%3EH%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ICON SPRITE -->
+  <svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5m0 0-6 6m6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m4.5 7.5 7.5 5.5 7.5-5.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.5" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.1 6.1 6.4 1.4-4.8 4.4 1.4 6.4-5.6-3.2-5.6 3.2 1.4-6.4L2.5 10l6.4-1.4L12 2.5Z"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.2l1.1-1.7c.3-.5.8-.8 1.4-.8h3.6c.6 0 1.1.3 1.4.8L16.3 6h1.2A2.5 2.5 0 0 1 20 8.5v8A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-8Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="12" cy="12.5" r="3.4" fill="none" stroke="currentColor" stroke-width="2.2"/></symbol>
+  </svg>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="siteNav">
+    <div class="container nav__inner">
+      <a class="logo" href="index.html">Hermawan<span>.</span></a>
+
+      <nav class="nav__menu" id="navMenu" aria-label="Navigasi utama">
+        <ul>
+          <li><a class="nav__link" href="#about">Tentang</a></li>
+          <li><a class="nav__link" href="#projects">Proyek</a></li>
+          <li><a class="nav__link" href="#photos">Foto</a></li>
+          <li><a class="nav__link" href="#experience">Pengalaman</a></li>
+          <li><a class="nav__link" href="#contact">Kontak</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm nav__cta" href="cv.html">
+          CV saya
+          <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__blob hero__blob--a" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--b" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--c" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#i-spark"/></svg>
+            Halo, aku Hermawan
+          </p>
+
+          <h1 class="hero__title">
+            Bikin website yang <span class="grad">seru</span>, cepat, dan bikin betah.
+          </h1>
+
+          <p class="lead">
+            Aku digital entusiast yang senang mengubah ide jadi pengalaman digital yang
+            menyenangkan — dari landing page sampai aplikasi web. Yuk, lihat karyaku!
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">
+              Lihat proyek
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <!-- Letakkan file CV kamu di assets/CV.pdf (nama harus sama) -->
+            <a class="btn btn--light" href="assets/CV.pdf" download>
+              Unduh CV
+              <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+            </a>
+          </div>
+
+          <ul class="socials" aria-label="Media sosial">
+            <li><a class="social" href="https://github.com/hirmiwin" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+            <li><a class="social" href="https://www.linkedin.com/in/hermawan-hermawan-b03a8195/" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+            <li><a class="social" href="https://www.instagram.com/heywan_/" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+            <li><a class="social" href="mailto:hirmiwin@gmail.com" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <div class="avatar-card">
+            <img src="assets/img/hermawan.jpg" alt="Ilustrasi karakter Hirmi" width="400" height="400">
+          </div>
+          <div class="float-card float-card--skill"><span class="dot"></span> Cepat &amp; ringan</div>
+          <div class="float-card float-card--code">&lt;/&gt; HTML · CSS · JS</div>
+          <div class="badge-open">OPEN<br>TO<br>WORK</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span class="marquee__item">HTML</span><svg class="icon"><use href="#i-spark"/></svg>
+          <span class="marquee__item">CSS</span><svg class="icon"><use href="#i-spark"/></svg>
+          <span class="marquee__item">JavaScript</span><svg class="icon"><use href="#i-spark"/></svg>
+          <span class="marquee__item">Codeigniter</span><svg class="icon"><use href="#i-spark"/></svg>
+          <span class="marquee__item">Git</span><svg class="icon"><use href="#i-spark"/></svg>
+          <span class="marquee__item">Node.js</span><svg class="icon"><use href="#i-spark"/></svg>
+          <span class="marquee__item">Mysql</span><svg class="icon"><use href="#i-spark"/></svg>
+        </div>
+        <div class="marquee__group">
+          <span class="marquee__item">HTML</span><svg class="icon"><use href="#i-spark"/></svg>
+          <span class="marquee__item">CSS</span><svg class="icon"><use href="#i-spark"/></svg>
+          <span class="marquee__item">JavaScript</span><svg class="icon"><use href="#i-spark"/></svg>
+          <span class="marquee__item">Codeigniter</span><svg class="icon"><use href="#i-spark"/></svg>
+          <span class="marquee__item">Git</span><svg class="icon"><use href="#i-spark"/></svg>
+          <span class="marquee__item">Node.js</span><svg class="icon"><use href="#i-spark"/></svg>
+          <span class="marquee__item">Mysql</span><svg class="icon"><use href="#i-spark"/></svg>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about__grid">
+        <div class="about__visual reveal">
+          <div class="polaroid">
+            <img src="assets/img/hermawann.jpg" alt="Foto ilustrasi Hermawan" width="400" height="400">
+            <p class="polaroid__caption">Hermawan <span>— digital entusiast</span></p>
+          </div>
+          <div class="about__sticker">SEJAK 2015</div>
+        </div>
+
+        <div class="about__content">
+          <p class="kicker">Tentang saya</p>
+          <h2 class="section__title">Kenalan dulu, yuk!</h2>
+          <p>
+            Aku Hermawan, digital entusiast yang percaya kalau website yang baik bukan cuma
+            kelihatan bagus — tapi juga enak dipakai dan cepat. Aku suka mengubah ide
+            sederhana jadi antarmuka yang hidup, penuh detail kecil yang bikin orang betah.
+          </p>
+          <p>
+            Sehari-hari aku ngulik HTML, CSS, JavaScript, dan sedikit Codeigniter. Di luar coding,
+            aku suka desain, ngopi, dan belajar hal baru dari internet. Kalau ada proyek seru,
+            kabari aku ya!
+          </p>
+
+          <ul class="skills" aria-label="Keahlian">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Codeigniter</li>
+            <li>Tailwind</li>
+            <li>Figma</li>
+            <li>Git</li>
+            <li>Node.js</li>
+          </ul>
+
+          <div class="stats">
+            <div class="stat stat--yellow"><strong>15+</strong><span>Proyek selesai</span></div>
+            <div class="stat stat--teal"><strong>10+</strong><span>Tahun belajar</span></div>
+            <div class="stat stat--pink"><strong>&infin;</strong><span>Rasa ingin tahu</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section--ink" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker kicker--light">Portofolio</p>
+            <h2 class="section__title section__title--light">Karya pilihan</h2>
+          </div>
+          <p class="section__note">
+            Beberapa proyek yang paling seru untuk dikerjakan sejauh ini.
+          </p>
+        </div>
+
+        <div class="projects">
+
+          <article class="project reveal" style="--d:.05s">
+            <a class="project__thumb" href="https://anandaislamicschool.com/" style="--g1:#FFD93D;--g2:#FF9F45" aria-label="Buka proyek Ananda Islamic School">
+              <span class="project__letter" aria-hidden="true">A</span>
+              <span class="project__open"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </a>
+            <div class="project__body">
+              <div class="project__top"><h3>Ananda Islamic School</h3></div>
+              <p>Website profil sekolah dengan frontend interaktif dan backend untuk mengelola konten serta informasi sekolah.</p>
+              <ul class="tags"><li>Laravel</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="project__links">
+                <a href="https://anandaislamicschool.com/">Kunjungi Webnya <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                <!-- <a href="#">Kode <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a> -->
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" style="--d:.4s">
+            <a class="project__thumb" href="http://103.14.111.110/pendaftaran/" style="--g1:#FF7AC6;--g2:#9B5DE5" aria-label="Buka proyek Pendaftaran Siswa Baru">
+              <span class="project__letter" aria-hidden="true">P</span>
+              <span class="project__open"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </a>
+            <div class="project__body">
+              <div class="project__top"><h3>Pendaftaran Siswa Baru</h3></div>
+              <p>Aplikasi pendaftaran siswa baru secara online.</p>
+              <ul class="tags"><li>CodeIgniter</li></ul>
+              <div class="project__links">
+                <a href="http://103.14.111.110/pendaftaran/">Buka Aplikasi <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal" style="--d:.3s">
+            <a class="project__thumb" href="http://103.14.111.110/rapor/" style="--g1:#4D96FF;--g2:#3ECFB2" aria-label="Buka proyek Aplikasi Rapor Sekolah">
+              <span class="project__letter" aria-hidden="true">R</span>
+              <span class="project__open"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </a>
+            <div class="project__body">
+              <div class="project__top"><h3>Aplikasi Rapor Sekolah</h3></div>
+              <p>Aplikasi rapor sekolah untuk mengakses informasi hasil belajar siswa.</p>
+              <ul class="tags"><li>Rapor Digital</li><li>Sekolah</li></ul>
+              <div class="project__links">
+                <a href="http://103.14.111.110/rapor/">Login - Aplikasi Rapor <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal" style="--d:.35s">
+            <a class="project__thumb" href="#" style="--g1:#FFD93D;--g2:#3ECFB2" aria-label="Buka proyek Portofolio 1.0">
+              <span class="project__letter" aria-hidden="true">P</span>
+              <span class="project__open"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </a>
+            <div class="project__body">
+              <div class="project__top"><h3>Portofolio 1.0</h3><span class="project__year">2023</span></div>
+              <p>Website portofolio pertamaku: responsif, ringan, dan penuh eksperimen animasi CSS.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <!-- <div class="project__links">
+                <a href="#">Demo <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                <a href="#">Kode <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div> -->
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTOS
+         Cara menambah foto:
+         1. Taruh file foto di assets/img/photos/ (contoh: foto-1.jpg, foto-2.jpg, ...)
+         2. Daftarkan nama filenya di assets/img/photos/manifest.json
+         3. Galeri di bawah akan terisi otomatis.
+    -->
+    <section class="section section--photos" id="photos">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker">Fotografi</p>
+            <h2 class="section__title">Karya foto</h2>
+          </div>
+          <p class="section__note">
+            Momen yang aku abadikan lewat lensa — dari jalanan sampai senja.
+            Klik fotonya untuk melihat lebih besar.
+          </p>
+        </div>
+
+        <div class="photo-grid" id="photoGrid" aria-live="polite">
+          <!-- Diisi otomatis oleh js/main.js dari assets/img/photos/manifest.json -->
+        </div>
+
+        <div class="photo-empty" id="photoEmpty" hidden>
+          <span class="photo-empty__icon"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg></span>
+          <h3>Galeri foto segera hadir</h3>
+          <p>
+            Taruh fotomu di <code>assets/img/photos/</code> dengan nama
+            <code>foto-1.jpg</code>, <code>foto-2.jpg</code>, dan seterusnya,
+            lalu daftarkan di <code>manifest.json</code>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker">Perjalanan</p>
+            <h2 class="section__title">Pengalaman &amp; pendidikan</h2>
+          </div>
+          <p class="section__note">
+            Sedikit cerita soal perjalananku belajar dan mengerjakan proyek nyata.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <span class="timeline__year">2020 — Sekarang</span>
+            <div class="timeline__card">
+              <h3>Freelance Web Developer</h3>
+              <p class="timeline__place">Remote · Indonesia</p>
+              <p>Membantu UMKM dan kreator membangun landing page, company profile, serta website portofolio yang cepat dan responsif.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal">
+            <span class="timeline__year">2020 - 2023</span>
+            <div class="timeline__card">
+              <h3>Co-Founder</h3>
+              <p class="timeline__place">RHT Official</p>
+              <!-- <p>Mengembangkan antarmuka website klien bersama tim desain, mulai dari wireframe sampai rilis.</p> -->
+              <!-- <ul class="tags"><li>React</li><li>Tailwind</li><li>Git</li></ul> -->
+            </div>
+          </article>
+
+          <article class="timeline__item reveal">
+            <span class="timeline__year">2016 — Sekarang</span>
+            <div class="timeline__card">
+              <h3>Head IT Department</h3>
+              <p class="timeline__place">Ananda Islamic School - Jakarta</p>
+              <p>Memimpin dan mengelola operasional TI, infrastruktur, sistem, serta inisiatif transformasi digital sekolah untuk mendukung keunggulan akademik dan administrasi.</p>
+              <ul>
+                <li>Memimpin operasional TI, pengelolaan infrastruktur, dan dukungan teknis di seluruh lingkungan sekolah.</li>
+                <li>Mengelola infrastruktur jaringan, server, koneksi internet, perangkat keras, dan perangkat lunak.</li>
+                <li>Mengawasi situs web dan sistem informasi internal sekolah; mengembangkan serta memelihara aplikasi manajemen sekolah, basis data, dan solusi digital.</li>
+                <li>Menerapkan strategi keamanan TI, perlindungan data, pencadangan, dan pemulihan bencana.</li>
+                <li>Mendorong transformasi digital melalui otomatisasi proses administrasi dan akademik.</li>
+                <li>Mengelola proyek TI, anggaran, pengadaan teknologi, dan hubungan dengan vendor; menetapkan kebijakan TI, SOP, serta standar operasional.</li>
+                <li>Membimbing dan mendukung guru, staf, serta manajemen sekolah; mengevaluasi teknologi baru untuk meningkatkan efisiensi operasional.</li>
+              </ul>
+              <ul class="tags"><li>Infrastruktur TI</li><li>Pengembangan Sistem</li><li>Administrasi Jaringan</li><li>Pengelolaan Basis Data</li><li>Transformasi Digital</li><li>Manajemen Proyek TI</li><li>Dukungan Teknis</li></ul>
+            </div>
+          </article>
+          
+
+          <!-- <article class="timeline__item reveal">
+            <span class="timeline__year">2016</span>
+            <div class="timeline__card">
+              <h3>IT Management Support</h3>
+              <p class="timeline__place">Green View Citayam</p>
+              <p>Mengembangkan antarmuka website klien bersama tim desain, mulai dari wireframe sampai rilis.</p>
+              <ul class="tags"><li>React</li><li>Tailwind</li><li>Git</li></ul>
+            </div>
+          </article> -->
+
+          <!-- <article class="timeline__item reveal">
+            <span class="timeline__year">2016</span>
+            <div class="timeline__card">
+              <h3>Market Place Management Specialist</h3>
+              <p class="timeline__place">PT Sejuk Elektronik</p>
+              <p>Mengembangkan antarmuka website klien bersama tim desain, mulai dari wireframe sampai rilis.</p>
+              <ul class="tags"><li>React</li><li>Tailwind</li><li>Git</li></ul>
+            </div>
+          </article> -->
+
+          <article class="timeline__item reveal">
+            <span class="timeline__year">2012 — 2015</span>
+            <div class="timeline__card">
+              <h3>S1 Sistem Informasi</h3>
+              <p class="timeline__place">Universitas Bina Nusantara</p>
+              <p>Mempelajari analisis dan perancangan sistem informasi, pemrograman, basis data, serta proses bisnis.</p>
+              <ul class="tags"><li>Algoritma</li><li>Basis Data</li><li>Web</li></ul>
+            </div>
+          </article>
+
+          <!-- <article class="timeline__item reveal">
+            <span class="timeline__year">2020 — 2021</span>
+            <div class="timeline__card">
+              <h3>Belajar Web Secara Otodidak</h3>
+              <p class="timeline__place">Kursus online &amp; dokumentasi</p>
+              <p>Mulai dari nol lewat HTML, CSS, dan JavaScript. Banyak eksperimen kecil yang jadi fondasi sampai sekarang.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            </div>
+          </article> -->
+        </div>
+
+        <div class="cta-banner reveal">
+          <div>
+            <h3>Mau versi lengkapnya?</h3>
+            <p>Unduh CV saya untuk melihat pengalaman, pendidikan, dan keahlian secara detail.</p>
+          </div>
+          <a class="btn btn--primary" href="assets/CV.pdf" download>
+            Unduh CV
+            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__intro reveal">
+          <p class="kicker">Kontak</p>
+          <h2 class="section__title">Punya ide? Ayo ngobrol!</h2>
+          <p>
+            Ada proyek, pertanyaan, atau sekadar mau kenalan? Kirim pesan lewat form di samping
+            atau email langsung. Aku biasanya balas dalam 1–2 hari.
+          </p>
+
+          <a class="mail-card" href="mailto:hirmiwin@gmail.com" aria-label="Kirim email ke hirmiwin@gmail.com">
+            <span class="mail-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <span>
+              <small>Email</small>
+              <strong>hirmiwin@gmail.com</strong>
+            </span>
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+
+          <ul class="socials socials--big" aria-label="Media sosial">
+            <li><a class="social" href="https://github.com/hirmiwin" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+            <li><a class="social" href="https://www.linkedin.com/in/hermawan-hermawan-b03a8195/" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+            <li><a class="social" href="https://www.instagram.com/heywan_/" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+            <li><a class="social" href="mailto:hirmiwin@gmail.com" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Nama</label>
+            <input id="name" name="name" type="text" placeholder="Nama kamu" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="nama@email.com" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" placeholder="Ceritakan ide atau proyekmu..." required></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit">
+            Kirim pesan
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </button>
+          <p class="form-note" id="formNote">Form ini akan membuka aplikasi email kamu.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo logo--light" href="index.html">Hermawan<span>.</span></a>
+      <p>Dibuat dengan banyak minum kopi. &copy; <span id="year">2026</span> Hermawan.</p>
+      <div class="footer__links">
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#photos">Foto</a>
+        <a href="cv.html">CV</a>
+        <a href="mailto:hirmiwin@gmail.com" aria-label="Kirim email ke hirmiwin@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="to-top" id="toTop" href="#home" aria-label="Kembali ke atas">
+    <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+
+
+
+</body>
+</html>

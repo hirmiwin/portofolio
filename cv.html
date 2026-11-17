@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV — Hermawan</title>
+  <meta name="description" content="Curriculum Vitae Hermawan, digital enthusiast dan web developer.">
+  <meta name="theme-color" content="#FFF9F2">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='26'%20fill='%23FF6B6B'/%3E%3Ctext%20x='50'%20y='71'%20font-family='Arial'%20font-size='58'%20font-weight='bold'%20text-anchor='middle'%20fill='%23241F35'%3EH%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="cv-page">
+
+  <svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5m0 0-6 6m6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <header class="cv-bar">
+    <div class="container cv-bar__inner">
+      <a class="logo" href="index.html">Hermawan<span>.</span></a>
+      <div class="cv-bar__actions">
+        <a class="btn btn--light btn--sm" href="index.html">
+          <svg class="icon" aria-hidden="true" style="transform:rotate(180deg)"><use href="#i-arrow"/></svg>
+          Kembali
+        </a>
+        <!-- Letakkan file CV kamu di assets/CV.pdf (nama harus sama) -->
+        <a class="btn btn--primary btn--sm" href="assets/CV.pdf" download>
+          Unduh CV
+          <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="cv-main">
+    <div class="container">
+      <p class="kicker">Curriculum Vitae</p>
+      <h1 class="cv-title">CV Hermawan</h1>
+      <p class="cv-sub">Digital enthusiast — web developer, IT manager, dan fotografi.</p>
+
+      <div class="cv-frame">
+        <iframe src="assets/CV.pdf" title="Curriculum Vitae Hermawan" loading="lazy"></iframe>
+      </div>
+
+      <p class="cv-hint">
+        Tidak bisa melihat CV di atas?
+        <a href="assets/CV.pdf" target="_blank" rel="noopener">Buka di tab baru</a>
+        atau <a href="assets/CV.pdf" download>unduh di sini</a>.
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo logo--light" href="index.html">Hermawan<span>.</span></a>
+      <p>Dibuat dengan banyak minum kopi. &copy; <span id="year">2026</span> Hermawan.</p>
+      <div class="footer__links">
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#photos">Foto</a>
+        <a href="cv.html">CV</a>
+        <a href="mailto:hirmiwin@gmail.com" aria-label="Kirim email ke hirmiwin@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="to-top is-visible" href="#" aria-label="Kembali ke atas" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+    <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+  </a>
+
+  <script>
+    var y = document.querySelector("#year");
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

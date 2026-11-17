@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV ATS - Hermawan</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 11mm 14mm;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      background: #ffffff;
+    }
+
+    body {
+      font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
+      font-size: 10pt;
+      line-height: 1.3;
+      color: #111111;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    a {
+      color: #111111;
+      text-decoration: none;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 9px;
+    }
+
+    h1 {
+      font-size: 21pt;
+      line-height: 1.1;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .role {
+      font-size: 11.5pt;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .contact {
+      font-size: 9.5pt;
+      line-height: 1.5;
+    }
+
+    .contact span {
+      white-space: nowrap;
+    }
+
+    .sep {
+      color: #555555;
+      padding: 0 4px;
+    }
+
+    section {
+      margin-top: 9px;
+    }
+
+    h2 {
+      font-size: 11pt;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      border-bottom: 1px solid #111111;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
+    }
+
+    .summary {
+      text-align: justify;
+    }
+
+    .job {
+      margin-bottom: 8px;
+    }
+
+    .job:last-child {
+      margin-bottom: 0;
+    }
+
+    .job-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .job-title {
+      font-size: 10.8pt;
+      font-weight: bold;
+    }
+
+    .job-meta {
+      font-size: 9.5pt;
+      white-space: nowrap;
+    }
+
+    .job-company {
+      font-size: 9.8pt;
+      font-style: italic;
+      margin-bottom: 3px;
+    }
+
+    ul {
+      margin: 2px 0 0 16px;
+    }
+
+    li {
+      margin-bottom: 2px;
+      padding-left: 2px;
+    }
+
+    .projects {
+      margin: 0 0 0 16px;
+    }
+
+    .projects li {
+      margin-bottom: 3px;
+      padding-left: 2px;
+    }
+
+    .project-name {
+      font-weight: bold;
+    }
+
+    .project-tech {
+      font-style: italic;
+    }
+
+    .project-link {
+      font-size: 9.3pt;
+      color: #333333;
+    }
+
+    .skills p {
+      margin-bottom: 3px;
+    }
+
+    .skills strong {
+      display: inline;
+    }
+
+    .education p {
+      margin-bottom: 2px;
+    }
+
+    .edu-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .edu-title {
+      font-weight: bold;
+    }
+
+    .edu-meta {
+      font-size: 9.5pt;
+      white-space: nowrap;
+    }
+
+    .edu-school {
+      font-style: italic;
+      font-size: 9.8pt;
+    }
+
+    @media print {
+      body {
+        font-size: 10pt;
+      }
+
+      section {
+        page-break-inside: avoid;
+      }
+
+      .job {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hermawan</h1>
+    <p class="role">Digital Enthusiast | Web Developer | IT Manager</p>
+    <p class="contact">
+      <span>Jakarta, Indonesia</span><span class="sep">|</span>
+      <span>hirmiwin@gmail.com</span><span class="sep">|</span>
+      <span>github.com/hirmiwin</span><br>
+      <span>linkedin.com/in/hermawan-hermawan-b03a8195</span><span class="sep">|</span>
+      <span>instagram.com/heywan_</span>
+    </p>
+  </header>
+
+  <section>
+    <h2>Ringkasan Profesional</h2>
+    <p class="summary">
+      Digital enthusiast dan web developer yang membangun landing page, company profile,
+      serta aplikasi web cepat, responsif, dan ramah pengguna. Berpengalaman memimpin
+      departemen TI sekolah, mengelola infrastruktur, sistem informasi, keamanan data,
+      dan transformasi digital. Terbiasa bekerja dengan HTML, CSS, JavaScript, Laravel,
+      CodeIgniter, Node.js, Tailwind CSS, Figma, dan Git, serta menekuni fotografi.
+    </p>
+  </section>
+
+  <section>
+    <h2>Pengalaman Kerja</h2>
+
+    <article class="job">
+      <div class="job-head">
+        <h3 class="job-title">Head IT Department</h3>
+        <span class="job-meta">2016 - Sekarang</span>
+      </div>
+      <p class="job-company">Ananda Islamic School - Jakarta, Indonesia</p>
+      <ul>
+        <li>Memimpin operasional TI, pengelolaan infrastruktur, dan dukungan teknis di seluruh lingkungan sekolah.</li>
+        <li>Mengelola infrastruktur jaringan, server, koneksi internet, perangkat keras, dan perangkat lunak.</li>
+        <li>Mengawasi situs web dan sistem informasi internal sekolah; mengembangkan serta memelihara aplikasi manajemen sekolah, basis data, dan solusi digital.</li>
+        <li>Menerapkan strategi keamanan TI, perlindungan data, pencadangan, dan pemulihan bencana.</li>
+        <li>Mendorong transformasi digital melalui otomatisasi proses administrasi dan akademik.</li>
+        <li>Mengelola proyek TI, anggaran, pengadaan teknologi, dan hubungan dengan vendor; menetapkan kebijakan TI, SOP, serta standar operasional.</li>
+        <li>Membimbing dan mendukung guru, staf, serta manajemen sekolah; mengevaluasi teknologi baru untuk meningkatkan efisiensi operasional.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head">
+        <h3 class="job-title">Freelance Web Developer</h3>
+        <span class="job-meta">2020 - Sekarang</span>
+      </div>
+      <p class="job-company">Remote - Indonesia</p>
+      <ul>
+        <li>Membantu UMKM dan kreator membangun landing page, company profile, serta website portofolio yang cepat dan responsif.</li>
+        <li>Mengembangkan antarmuka web dengan HTML, CSS, dan JavaScript dengan fokus pada performa, aksesibilitas, dan pengalaman pengguna.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head">
+        <h3 class="job-title">Co-Founder</h3>
+        <span class="job-meta">2020 - 2023</span>
+      </div>
+      <p class="job-company">RHT Official</p>
+    </article>
+  </section>
+
+  <section>
+    <h2>Proyek Pilihan</h2>
+
+    <ul class="projects">
+      <li><span class="project-name">Ananda Islamic School</span> - Website profil sekolah dengan frontend interaktif dan backend untuk mengelola konten serta informasi sekolah. <span class="project-tech">Laravel, HTML, CSS, JavaScript.</span> <span class="project-link">anandaislamicschool.com</span></li>
+      <li><span class="project-name">Pendaftaran Siswa Baru</span> - Aplikasi pendaftaran siswa baru secara online. <span class="project-tech">CodeIgniter.</span> <span class="project-link">103.14.111.110/pendaftaran</span></li>
+      <li><span class="project-name">Aplikasi Rapor Sekolah</span> - Aplikasi rapor sekolah untuk mengakses informasi hasil belajar siswa secara digital. <span class="project-link">103.14.111.110/rapor</span></li>
+      <li><span class="project-name">Portofolio 1.0</span> (2023) - Website portofolio responsif dan ringan dengan animasi CSS. <span class="project-tech">HTML, CSS, JavaScript.</span></li>
+    </ul>
+  </section>
+
+  <section class="education">
+    <h2>Pendidikan</h2>
+    <div class="edu-head">
+      <h3 class="edu-title">S1 Sistem Informasi</h3>
+      <span class="edu-meta">2012 - 2015</span>
+    </div>
+    <p class="edu-school">Universitas Bina Nusantara - Jakarta, Indonesia</p>
+    <p>Analisis dan perancangan sistem informasi, pemrograman, basis data, serta proses bisnis.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Keahlian</h2>
+    <p><strong>Web Development:</strong> HTML5, CSS3, JavaScript, Laravel, CodeIgniter, Tailwind CSS, Node.js, MySQL</p>
+    <p><strong>Desain dan Tools:</strong> Figma, Git, GitHub</p>
+    <p><strong>IT dan Sistem:</strong> Infrastruktur TI, Administrasi Jaringan, Pengelolaan Server, Pengembangan Sistem, Pengelolaan Basis Data, Keamanan TI, Transformasi Digital, Manajemen Proyek TI, Dukungan Teknis</p>
+    <p><strong>Minat:</strong> Fotografi, desain visual, dan eksplorasi teknologi baru</p>
+  </section>
+
+</body>
+</html>
