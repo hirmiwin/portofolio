@@ -109,7 +109,7 @@
   /* Form kontak: buka aplikasi email pengunjung */
   var form = document.querySelector("#contactForm");
   if (form) {
-    var EMAIL = "hello@hirmi.dev"; /* GANTI dengan email kamu */
+    var EMAIL = "hirmiwin@gmail.com";
     var note = document.querySelector("#formNote");
 
     form.addEventListener("submit", function (e) {
